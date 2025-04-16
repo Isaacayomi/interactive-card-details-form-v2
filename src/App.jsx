@@ -16,7 +16,11 @@ function SideBar() {
   return (
     <div className="sidebar">
       <div className="front-card">
-        <img src="images/bg-card-front.png" alt="front card" />
+        <img
+          src="images/bg-card-front.png"
+          alt="front card"
+          className="front-card-img"
+        />
 
         <div className="card-content">
           <img src="images/card-logo.svg" alt="card logo" className="logo" />{" "}
@@ -28,7 +32,11 @@ function SideBar() {
         </div>
       </div>
       <div className="back-card">
-        <img src="images/bg-card-back.png" alt="back card" />
+        <img
+          src="images/bg-card-back.png"
+          alt="back card"
+          className="back-card-img"
+        />
         <div className="back-card-content">
           <p className="back-card-cvv">000</p>
         </div>
@@ -41,34 +49,38 @@ function Form() {
   return (
     <div className="form">
       <form>
-        <div className="form-group">
-          <label htmlFor="cardholder-name">Cardholder Name</label>
-          <input
-            type="text"
-            className="cardholder-name"
-            placeholder="e.g. Jane Appleseed"
-          />
-          <ErrorMessage>Wrong format, number only </ErrorMessage>
+        <div className="form-group-details">
+          <div className="form-group">
+            <label htmlFor="cardholder-name">Cardholder Name</label>
+            <input
+              type="text"
+              className="cardholder-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <ErrorMessage>Wrong format, number only </ErrorMessage>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="card-number">Card Number</label>
+            <input
+              type="text"
+              maxLength={16}
+              className="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <ErrorMessage>Wrong format, number only </ErrorMessage>
+          </div>
         </div>
 
-        <div className="form-group">
-          <label htmlFor="card-number">Card Number</label>
-          <input
-            type="text"
-            maxLength={16}
-            className="card-number"
-            placeholder="e.g. 1234 5678 9123 0000"
-          />
-          <ErrorMessage>Wrong format, number only </ErrorMessage>
+        <div className="exp-labels">
+          <label htmlFor="exp-date" className="exp-details-label">
+            Exp. Date (MM/YY)
+          </label>
+
+          <label htmlFor="cvc" className="exp-details-label cvc-label">
+            CVC
+          </label>
         </div>
-
-        <label htmlFor="exp-date" className="exp-details-label">
-          Exp. Date (MM/YY)
-        </label>
-
-        <label htmlFor="cvc" className="exp-details-label cvc-label">
-          CVC
-        </label>
 
         <div className="form-date-group">
           <div className="exp-form-group">

@@ -276,6 +276,135 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 996px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    max-width: 40rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .front-card {
+    margin-left: -14rem;
+    margin-top: 6rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .back-card {
+    margin-left: 10rem;
+    margin-top: -23rem;
+    position: relative;
+  }
+
+  .card-content {
+    position: absolute;
+    width: 85%;
+  }
+
+  .card-num {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .name-card-details {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .form {
+    margin-top: 6rem;
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  .form-group-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .form-group-details input {
+    width: 100%;
+  }
+
+  .form-date-group {
+    justify-content: space-around;
+  }
+
+  .exp-labels {
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cvc-label {
+    margin-left: 9.5rem;
+  }
+
+  button {
+    display: block;
+    margin-inline: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    max-width: 3rem;
+  }
+
+  .front-card,
+  .back-card {
+    max-width: 20rem;
+    height: auto;
+    margin: 1rem auto;
+    position: relative;
+  }
+
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+
+  .card-num {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .name-card-details {
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+  }
+
+  .form-group input,
+  .exp-form-group input,
+  .cvv-form-group input {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding-block: 0.7rem;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .main-container {
     max-width: 1440px;
