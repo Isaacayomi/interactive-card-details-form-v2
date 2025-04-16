@@ -340,6 +340,7 @@ button:hover {
 
   .form-date-group {
     justify-content: space-around;
+    margin-inline: -1.7rem;
   }
 
   .exp-labels {
@@ -350,7 +351,7 @@ button:hover {
   }
 
   .cvc-label {
-    margin-left: 9.5rem;
+    margin-left: 10.2rem;
   }
 
   button {
@@ -360,48 +361,187 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .logo {
-    max-width: 3rem;
+@media screen and (max-width: 670px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    width: 100%;
   }
 
   .front-card,
   .back-card {
-    max-width: 20rem;
+    max-width: 18rem;
     height: auto;
     margin: 1rem auto;
     position: relative;
   }
 
+  .back-card {
+    margin-top: -25rem;
+    margin-left: 10rem;
+  }
+
+  .front-card {
+    margin-left: 0rem;
+    margin-top: 8rem;
+    position: relative;
+    z-index: 1;
+  }
+
   .card-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
+    width: 100%;
   }
 
   .card-num {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+    font-size: 1.24rem;
+    max-width: 40rem;
+    width: 100%;
+    margin-inline: auto;
+    /* margin: 0.5rem 0; */
+    text-align: center;
   }
 
   .name-card-details {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     margin-top: 0.5rem;
+  }
+
+  .form {
+    margin-top: 4rem;
+    padding: 1rem;
+    max-width: 25rem;
+    width: 100%;
+  }
+
+  .form-group-details {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .form-group input,
   .exp-form-group input,
   .cvv-form-group input {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.5rem;
   }
 
+  .exp-labels {
+    padding-inline: 0;
+  }
+
+  .form-date-group {
+    justify-content: start;
+    margin-inline: auto;
+  }
+
+  .cvc-label {
+    margin-left: 3.5rem;
+  }
+
   button {
-    font-size: 0.9rem;
-    padding-block: 0.7rem;
+    font-size: 1rem;
+    padding-block: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .sidebar {
+    height: 15rem;
+    padding-top: 5rem;
+  }
+
+  .front-card-img,
+  .back-card-img {
+    max-width: 17.8125rem;
+    width: 100%;
+  }
+
+  .card-content .logo {
+    max-width: 3rem;
+    margin-top: 1.1rem;
+    margin-bottom: 2.31rem;
+  }
+
+  .card-num {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: -1.4rem;
+  }
+
+  .card-name {
+    margin-right: 5.5rem;
+  }
+
+  .name-card-details {
+    font-size: 0.6rem;
+    justify-content: start;
+  }
+
+  .form {
+    margin-top: 2rem;
+    padding: 1rem;
+    max-width: 25rem;
+    width: 100%;
+  }
+
+  .form-group input,
+  .exp-form-group input,
+  .cvv-form-group input {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .back-card-cvv {
+    margin-top: 4.25rem;
+    margin-left: 12.6rem;
+  }
+
+  .back-card {
+    margin-top: -17rem;
+    margin-left: 13rem;
+  }
+
+  .front-card {
+    height: auto;
+    margin-top: -2rem;
+    margin-right: 5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding-block: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .back-card {
+    margin-left: 8rem;
+  }
+
+  .front-card {
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .back-card {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .back-card-img,
+  .front-card-img {
+    max-width: 14rem;
+    width: 100%;
   }
 }
 
