@@ -260,6 +260,10 @@ button:hover {
     width: 90%;
     font-size: 0.75rem;
   }
+
+  .completion-page {
+    margin-left: 10rem;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -358,6 +362,20 @@ button:hover {
     display: block;
     margin-inline: auto;
     margin-top: 1.5rem;
+  }
+
+  .completion-page img {
+    max-width: 5.2rem;
+    width: 100%;
+  }
+
+  .completion-page {
+    margin-inline: auto;
+    margin-top: 5rem;
+  }
+
+  .completion-page p {
+    margin-bottom: -0.1rem;
   }
 }
 
@@ -478,6 +496,8 @@ button:hover {
 
   .card-name {
     margin-right: 5.5rem;
+    width: 50%;
+    word-wrap: break-word;
   }
 
   .name-card-details {
@@ -538,10 +558,38 @@ button:hover {
 }
 
 @media screen and (max-width: 400px) {
-  .back-card-img,
-  .front-card-img {
+  .back-card,
+  .front-card {
     max-width: 14rem;
     width: 100%;
+  }
+
+  .front-card {
+    margin-left: 2rem;
+  }
+
+  .back-card-cvv {
+    margin-left: 10rem;
+    margin-top: 3.2rem;
+  }
+
+  .card-num {
+    font-size: 0.85rem;
+    margin-top: -1rem;
+  }
+
+  .name-card-details {
+    margin-left: -1rem;
+  }
+
+  .card-cvv {
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .back-card {
+    margin-left: 3.5rem;
   }
 }
 
